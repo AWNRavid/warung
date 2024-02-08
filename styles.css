@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Comforter&family=Luckiest+Guy&family=Roboto:wght@100;300;400;500;700;900&family=Kablammo&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+#home,
+#add-on,
+#review,
+aside {
+  padding-top: 4.5rem;
+}
+
+#contact {
+  margin-top: 7rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #c4ffe4;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  color: black;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 1200px;
+  gap: 20rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-family: "Kablammo", cursive;
+  font-size: 1.1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hamburger-menu,
+.sub-menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(79, 79, 79);
+  cursor: pointer;
+  font-size: large;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  list-style: none;
+  background-color: #c4ffe4;
+  padding: 1rem;
+}
+
+.sub-menu li {
+  margin-bottom: 1rem;
+}
+
+.sub-menu a {
+  text-decoration: none;
+  color: rgb(79, 79, 79);
+  cursor: pointer;
+  font-size: large;
+}
+
+main {
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  max-width: 1200px;
+  inset: 0;
+  margin: auto;
+}
+
+.content {
+  flex: 4;
+}
+
+.food-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.food {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 3rem;
+  text-align: start;
+  align-items: center;
+}
+
+.food img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.flip {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.food-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #ffe4c4;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.food-desc p {
+  font-weight: 300;
+}
+
+.add-on-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: space-evenly;
+}
+
+.add-on-list section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 0;
+  font-weight: 500;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.add-on-list section img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.review-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.review-card {
+  width: 280px;
+  height: 280px;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.review-card.review-one {
+  background-color: #fd8a8a;
+}
+
+.review-card.review-two {
+  background-color: #9ea1d4;
+}
+
+.review-card.review-three {
+  background-color: #a8d1d1;
+}
+
+.review-detail {
+  padding-top: 1rem;
+}
+
+.review-detail p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.review-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+  color: yellow;
+}
+
+.review-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: -95px;
+  right: 86px;
+}
+
+.review-user-info .user {
+  font-weight: 600;
+}
+
+.review-user-info img {
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 75%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+aside {
+  flex: 1.5;
+}
+
+.biodata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.photo {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.data {
+  font-size: 1.1rem;
+}
+
+.data div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #c4ffe4;
+  color: black;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+footer .social-media span a {
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #home,
+  #add-on,
+  #review,
+  aside {
+    padding-top: 5rem;
+  }
+
+  aside {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .biodata {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h2 {
+    margin-bottom: 4.5rem;
+    font-size: 2.5rem;
+  }
+
+  #home,
+  #add-on,
+  #review,
+  aside {
+    padding-bottom: 7rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: inline;
+  }
+
+  .sub-menu {
+    top: 5.5rem;
+    right: 0.5rem;
+    text-align: end;
+    z-index: 1;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .add-on-list {
+    gap: 3.5rem 1rem;
+  }
+
+  .review-list {
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-content: baseline;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #home,
+  #add-on,
+  #review,
+  aside {
+    padding-top: 6.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .food {
+    flex-direction: column;
+  }
+
+  .food-desc {
+    text-align: center;
+  }
+
+  .review-card {
+    margin-bottom: 3.5rem;
+  }
+
+  .google-map {
+    padding-bottom: 100%;
+    position: relative;
+  }
+
+  .biodata .photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .biodata {
+    gap: 2.5rem;
+  }
+
+  .data {
+    gap: .5rem;
+  }
+}
